@@ -3,7 +3,7 @@ const InterviewSchedule = require("../models/InterviewSchedule");
 const createTimelineEvent = require("../utils/createTimelineEvent");
 
 const createNotification = require("../utils/createNotification");
-const Application = require("../models/Application");
+const Application = require("../models/application");
 const { sendEmail } = require("../services/emailService");
 const interviewScheduledTemplate = require("../templates/interviewScheduledTemplate");
 
