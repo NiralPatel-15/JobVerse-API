@@ -1,6 +1,6 @@
 const CandidateScore = require("../models/CandidateScore");
 
-const Application = require("../models/Application");
+const Application = require("../models/application");
 
 const { scoreCandidate } = require("../services/ai/candidateScoringEngine");
 
