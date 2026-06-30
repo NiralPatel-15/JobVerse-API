@@ -1,7 +1,7 @@
 const groq = require("../utils/groq");
 const User = require("../models/user");
 const Job = require("../models/job");
-const CandidateScore = require("../models/candidateScore");
+const CandidateScore = require("../models/CandidateScore");
 const reviewResumeService = require("../services/resumeReview.service");
 
 const improveText = async (req, res) => {
