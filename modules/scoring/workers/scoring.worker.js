@@ -6,7 +6,7 @@ const Application = require("../../../models/application");
 
 const CandidateScore = require("../models/CandidateScore");
 
-const Job = require("../../../models/Job");
+const Job = require("../../../models/job");
 
 const generateCandidateScore = require("../services/candidateScoringEngine.service");
 
