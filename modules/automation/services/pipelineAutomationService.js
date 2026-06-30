@@ -1,4 +1,4 @@
-const Application = require("../../../models/Application");
+const Application = require("../../../models/application");
 const CandidateScore = require("../../scoring/models/CandidateScore");
 
 const evaluatePipelineAutomation = async (applicationId) => {
