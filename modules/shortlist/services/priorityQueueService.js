@@ -1,4 +1,4 @@
-const Application = require("../../../models/Application");
+const Application = require("../../../models/application");
 
 const generatePriorityQueue = async (jobId) => {
   const applications = await Application.find({
