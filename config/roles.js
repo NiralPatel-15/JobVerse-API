@@ -1,0 +1,42 @@
+const { PERMISSIONS } = require("./permissions");
+
+const ROLES = {
+  SUPER_ADMIN: "super_admin",
+
+  ADMIN: "admin",
+
+  RECRUITER_MANAGER: "recruiter_manager",
+
+  RECRUITER: "recruiter",
+
+  USER: "user",
+};
+
+const ROLE_PERMISSIONS = {
+  [ROLES.SUPER_ADMIN]: Object.values(PERMISSIONS),
+
+  [ROLES.ADMIN]: [
+    PERMISSIONS.APPROVE_RECRUITERS,
+
+    PERMISSIONS.MODERATE_JOBS,
+
+    PERMISSIONS.VIEW_REPORTS,
+
+    PERMISSIONS.DELETE_REPORTS,
+
+    PERMISSIONS.VIEW_ANALYTICS,
+
+    PERMISSIONS.VIEW_AUDIT_LOGS,
+  ],
+
+  [ROLES.RECRUITER_MANAGER]: [PERMISSIONS.MANAGE_APPLICATIONS],
+
+  [ROLES.RECRUITER]: [],
+
+  [ROLES.USER]: [],
+};
+
+module.exports = {
+  ROLES,
+  ROLE_PERMISSIONS,
+};
