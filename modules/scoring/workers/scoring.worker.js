@@ -2,7 +2,7 @@ const { Worker } = require("bullmq");
 
 const redisConnection = require("../../../config/redis");
 
-const Application = require("../../../models/Application");
+const Application = require("../../../models/application");
 
 const CandidateScore = require("../models/CandidateScore");
 
