@@ -1,6 +1,6 @@
 const messagingService = require("../services/messagingService");
-const Conversation = require("../models/conversation");
-const Message = require("../models/message");
+const Conversation = require("../models/Conversation");
+const Message = require("../models/Message");
 
 exports.createConversation = async (req, res) => {
   try {
